@@ -1,0 +1,15 @@
+name: "demo"
+version: "1.0.0"
+profile: "demo"
+
+seed-paths: ["data"]
+
+models:
+  demo:
+    # Applies to all files under models/example/
+    transform:
+      schema: transform
+      materialized: view
+    analysis:
+      schema: analysis
+      materialized: view
